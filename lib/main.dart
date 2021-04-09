@@ -164,7 +164,8 @@ class Home extends StatelessWidget {
                 height: 80,
               ),
               //Flexible(fit: FlexFit.loose),
-              Text("Created by Ayush",
+              Text(
+                "Created by Ayush",
                 style: TextStyle(fontSize: 18, color: Colors.white),
               ),
             ],
