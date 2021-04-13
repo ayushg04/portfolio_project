@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
-
 void main() {
   runApp(MaterialApp(
     home: Home(),
@@ -210,6 +209,68 @@ class Home extends StatelessWidget {
                   "Ringley Project - Worked in UI updation of Webpages in HTML, CSS and Javascript.",
                   style: TextStyle(fontSize: 27, color: Colors.white),
                   textAlign: TextAlign.center,
+                ),
+                SizedBox(
+                  height: 100,
+                ),
+                Text(
+                  "Follow me to know more - ",
+                  style: TextStyle(fontSize: 25, color: Colors.white)
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          ElevatedButton.icon(
+                            onPressed: (){},
+                            icon: Icon(
+                              Icons.link_outlined,
+                              color: Colors.white,
+                              size: 26,
+                            ),
+                            label: Text("Github"),
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Row(
+                        children: <Widget>[
+                          ElevatedButton.icon(
+                            onPressed: (){},
+                            icon: Icon(
+                              Icons.link_outlined,
+                              color: Colors.white,
+                              size: 26,
+                            ),
+                            label: Text("LinkedIn"),
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Row(
+                        children: <Widget>[
+                          ElevatedButton.icon(
+                            onPressed: (){},
+                            icon: Icon(
+                              Icons.link_outlined,
+                              color: Colors.white,
+                              size: 26,
+                            ),
+                            label: Text("Instagram"),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
                 SizedBox(
                   height: 100,
