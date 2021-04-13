@@ -21,7 +21,7 @@ class Home extends StatelessWidget {
                   image: AssetImage("image/backgroud.jpeg"),
                   fit: BoxFit.cover)),
           child: Padding(
-            padding: const EdgeInsets.only(left:10.0,top: 40),
+            padding: const EdgeInsets.only(left: 10.0, top: 40),
             child: Column(
               children: <Widget>[
                 Row(
@@ -176,8 +176,6 @@ class Home extends StatelessWidget {
                             size: 130,
                             color: Colors.white,
                           ),
-
-
                         ],
                       )
                     ],
@@ -186,7 +184,32 @@ class Home extends StatelessWidget {
                 //Flexible(fit: FlexFit.loose),
                 Text(
                   "PAS Project - Worked on different pages to make them updated with javascript, HTML, CSS.",
-                  style: TextStyle(fontSize: 30, color: Colors.white),
+                  style: TextStyle(fontSize: 27, color: Colors.white),
+                  textAlign: TextAlign.center,
+                ),
+                SizedBox(
+                  height: 100,
+                ),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          Icon(
+                            Icons.event_available_outlined,
+                            size: 130,
+                            color: Colors.white,
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+                Text(
+                  "Ringley Project - Worked in UI updation of Webpages in HTML, CSS and Javascript.",
+                  style: TextStyle(fontSize: 27, color: Colors.white),
+                  textAlign: TextAlign.center,
                 ),
                 SizedBox(
                   height: 100,
