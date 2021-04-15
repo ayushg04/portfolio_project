@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
+
 void main() {
   runApp(MaterialApp(
     home: Home(),
@@ -12,7 +13,8 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height -
-                   MediaQuery.of(context).padding.top-kToolbarHeight;
+        MediaQuery.of(context).padding.top -
+        kToolbarHeight;
     final width = MediaQuery.of(context).size.width;
     return Scaffold(
       body: SingleChildScrollView(
@@ -298,10 +300,8 @@ class Home extends StatelessWidget {
                 SizedBox(
                   height: 100,
                 ),
-                Text(
-                  "Follow me to know more - ",
-                  style: TextStyle(fontSize: 25, color: Colors.white)
-                ),
+                Text("Follow me to know more - ",
+                    style: TextStyle(fontSize: 25, color: Colors.white)),
                 SizedBox(
                   height: 20,
                 ),
@@ -312,7 +312,7 @@ class Home extends StatelessWidget {
                       Row(
                         children: <Widget>[
                           ElevatedButton.icon(
-                            onPressed: (){},
+                            onPressed: () {},
                             icon: Icon(
                               Icons.link_outlined,
                               color: Colors.white,
@@ -328,7 +328,7 @@ class Home extends StatelessWidget {
                       Row(
                         children: <Widget>[
                           ElevatedButton.icon(
-                            onPressed: (){},
+                            onPressed: () {},
                             icon: Icon(
                               Icons.link_outlined,
                               color: Colors.white,
@@ -344,7 +344,7 @@ class Home extends StatelessWidget {
                       Row(
                         children: <Widget>[
                           ElevatedButton.icon(
-                            onPressed: (){},
+                            onPressed: () {},
                             icon: Icon(
                               Icons.link_outlined,
                               color: Colors.white,
