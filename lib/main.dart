@@ -173,19 +173,21 @@ class Home extends StatelessWidget {
                     children: <Widget>[
                       Row(
                         children: <Widget>[
-                          Icon(
-                            Icons.event_available,
-                            size: 130,
-                            color: Colors.white,
-                          ),
+                          CircleAvatar(
+                            radius: 95,
+                            backgroundImage: AssetImage("image/project1.jpeg"),
+                          )
                         ],
                       )
                     ],
                   ),
                 ),
+                SizedBox(
+                  height: 30,
+                ),
                 //Flexible(fit: FlexFit.loose),
                 Text(
-                  "PAS Project - Worked on different pages to make them updated with javascript, HTML, CSS.",
+                  "PAS Project:- Worked on different pages to make them updated with javascript, HTML, CSS with proper working UI with the help of zeplin software and team guidance.",
                   style: TextStyle(fontSize: 27, color: Colors.white),
                   textAlign: TextAlign.center,
                 ),
@@ -198,18 +200,98 @@ class Home extends StatelessWidget {
                     children: <Widget>[
                       Row(
                         children: <Widget>[
-                          Icon(
-                            Icons.event_available_outlined,
-                            size: 130,
-                            color: Colors.white,
+                          CircleAvatar(
+                            radius: 95,
+                            backgroundImage: AssetImage("image/project2.jpeg"),
                           ),
                         ],
                       )
                     ],
                   ),
                 ),
+                SizedBox(
+                  height: 30,
+                ),
                 Text(
-                  "Ringley Project - Worked in UI updation of Webpages in HTML, CSS and Javascript.",
+                  "Ringley Project:- Worked in UI updation of Webpages in HTML, CSS and Javascript with the proper page decoration and alignment with the help of client and team guidance.",
+                  style: TextStyle(fontSize: 27, color: Colors.white),
+                  textAlign: TextAlign.center,
+                ),
+                SizedBox(
+                  height: 100,
+                ),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          CircleAvatar(
+                            radius: 95,
+                            backgroundImage: AssetImage("image/project3.jpeg"),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                Text(
+                  "Blood Bank Management System:- It is Database management system which helps in blood bank to keep update the software of the latest blood bags available in the blood bank.",
+                  style: TextStyle(fontSize: 27, color: Colors.white),
+                  textAlign: TextAlign.center,
+                ),
+                SizedBox(
+                  height: 100,
+                ),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          CircleAvatar(
+                            radius: 95,
+                            backgroundImage: AssetImage("image/project4.jpeg"),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                Text(
+                  "Active Route Tracer:- It is a cross platform application which uses both software side as well as hardware side. It helps to locate the live location of our model which easily retrives in our software aplication.",
+                  style: TextStyle(fontSize: 27, color: Colors.white),
+                  textAlign: TextAlign.center,
+                ),
+                SizedBox(
+                  height: 100,
+                ),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          CircleAvatar(
+                            radius: 95,
+                            backgroundImage: AssetImage("image/project5.jpeg"),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                Text(
+                  "Food Management Application:- It is an appliaction that searches for the left over food provider and helps to forward that food to the nearest slums so that food can be utilsed by the needy persons instead of storing and wasting that food.",
                   style: TextStyle(fontSize: 27, color: Colors.white),
                   textAlign: TextAlign.center,
                 ),

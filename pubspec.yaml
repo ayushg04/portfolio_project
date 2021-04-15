@@ -49,6 +49,11 @@ flutter:
     - image/ayush.jpg
     - image/backgroud.jpeg
     - image/port.jpg
+    - image/project1.jpeg
+    - image/project2.jpeg
+    - image/project3.jpeg
+    - image/project4.jpeg
+    - image/project5.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
