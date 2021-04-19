@@ -1,7 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter/cupertino.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -44,11 +44,17 @@ class Home extends StatelessWidget {
                         //Flexible(fit: FlexFit.tight),
                         Text(
                           "Ayush Gaur",
-                          style: TextStyle(fontSize: 33, color: Colors.white),
+                          style: TextStyle(
+                              fontSize: 42,
+                              color: Colors.white,
+                              fontFamily: "Bangers"),
                         ),
                         Text(
                           "App Developer",
-                          style: TextStyle(fontSize: 17, color: Colors.white),
+                          style: TextStyle(
+                              fontSize: 22,
+                              color: Colors.white,
+                              fontFamily: "Bangers"),
                         )
                       ],
                     )
@@ -70,12 +76,15 @@ class Home extends StatelessWidget {
                             color: Colors.white,
                           ),
                           SizedBox(
-                            width: 30,
+                            width: 20,
                           ),
                           //Flexible(fit: FlexFit.loose),
                           Text(
                             "City Montessori School, Lucknow",
-                            style: TextStyle(fontSize: 27, color: Colors.white),
+                            style: TextStyle(
+                                fontSize: 33,
+                                color: Colors.white,
+                                fontFamily: "Caveat"),
                           )
                         ],
                       ),
@@ -90,11 +99,14 @@ class Home extends StatelessWidget {
                             color: Colors.white,
                           ),
                           SizedBox(
-                            width: 30,
+                            width: 20,
                           ),
                           Text(
                             "Pranveer Singh Institute of Technology, Kanpur",
-                            style: TextStyle(fontSize: 27, color: Colors.white),
+                            style: TextStyle(
+                                fontSize: 33,
+                                color: Colors.white,
+                                fontFamily: "Caveat"),
                           ),
                         ],
                       ),
@@ -109,11 +121,14 @@ class Home extends StatelessWidget {
                             color: Colors.white,
                           ),
                           SizedBox(
-                            width: 30,
+                            width: 20,
                           ),
                           Text(
                             "ayushgaur0423@gmail.com",
-                            style: TextStyle(fontSize: 27, color: Colors.white),
+                            style: TextStyle(
+                                fontSize: 33,
+                                color: Colors.white,
+                                fontFamily: "Caveat"),
                           )
                         ],
                       ),
@@ -128,11 +143,14 @@ class Home extends StatelessWidget {
                             color: Colors.white,
                           ),
                           SizedBox(
-                            width: 30,
+                            width: 20,
                           ),
                           Text(
                             "+91-8887418075",
-                            style: TextStyle(fontSize: 27, color: Colors.white),
+                            style: TextStyle(
+                                fontSize: 33,
+                                color: Colors.white,
+                                fontFamily: "Caveat"),
                           ),
                         ],
                       ),
@@ -147,11 +165,14 @@ class Home extends StatelessWidget {
                             color: Colors.white,
                           ),
                           SizedBox(
-                            width: 30,
+                            width: 20,
                           ),
                           Text(
                             "Lucknow, Uttar-Pradesh, India",
-                            style: TextStyle(fontSize: 27, color: Colors.white),
+                            style: TextStyle(
+                                fontSize: 33,
+                                color: Colors.white,
+                                fontFamily: "Caveat"),
                           )
                         ],
                       ),
@@ -163,7 +184,8 @@ class Home extends StatelessWidget {
                 ),
                 Text(
                   "Hello, I am an iOS developer in unthinkable solutions. I have completed my schooling from CMS, Lucknow and currently I am pursuing B Tech from Psit, Kanpur. I love to play games which helps in increasing my IQ. I also love to listen soft music.",
-                  style: TextStyle(fontSize: 27, color: Colors.white),
+                  style: TextStyle(
+                      fontSize: 30, color: Colors.white, fontFamily: "Satisfy"),
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(
@@ -190,7 +212,8 @@ class Home extends StatelessWidget {
                 //Flexible(fit: FlexFit.loose),
                 Text(
                   "PAS Project:- Worked on different pages to make them updated with javascript, HTML, CSS with proper working UI with the help of zeplin software and team guidance.",
-                  style: TextStyle(fontSize: 27, color: Colors.white),
+                  style: TextStyle(
+                      fontSize: 27, color: Colors.white, fontFamily: "ZenDots"),
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(
@@ -216,7 +239,8 @@ class Home extends StatelessWidget {
                 ),
                 Text(
                   "Ringley Project:- Worked in UI updation of Webpages in HTML, CSS and Javascript with the proper page decoration and alignment with the help of client and team guidance.",
-                  style: TextStyle(fontSize: 27, color: Colors.white),
+                  style: TextStyle(
+                      fontSize: 26, color: Colors.white, fontFamily: "ZenDots"),
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(
@@ -242,7 +266,8 @@ class Home extends StatelessWidget {
                 ),
                 Text(
                   "Blood Bank Management System:- It is Database management system which helps in blood bank to keep update the software of the latest blood bags available in the blood bank.",
-                  style: TextStyle(fontSize: 27, color: Colors.white),
+                  style: TextStyle(
+                      fontSize: 26, color: Colors.white, fontFamily: "ZenDots"),
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(
@@ -268,7 +293,8 @@ class Home extends StatelessWidget {
                 ),
                 Text(
                   "Active Route Tracer:- It is a cross platform application which uses both software side as well as hardware side. It helps to locate the live location of our model which easily retrives in our software aplication.",
-                  style: TextStyle(fontSize: 27, color: Colors.white),
+                  style: TextStyle(
+                      fontSize: 27, color: Colors.white, fontFamily: "ZenDots"),
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(
@@ -294,14 +320,18 @@ class Home extends StatelessWidget {
                 ),
                 Text(
                   "Food Management Application:- It is an appliaction that searches for the left over food provider and helps to forward that food to the nearest slums so that food can be utilsed by the needy persons instead of storing and wasting that food.",
-                  style: TextStyle(fontSize: 27, color: Colors.white),
+                  style: TextStyle(
+                      fontSize: 26, color: Colors.white, fontFamily: "ZenDots"),
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(
                   height: 100,
                 ),
                 Text("Follow me to know more - ",
-                    style: TextStyle(fontSize: 25, color: Colors.white)),
+                    style: TextStyle(
+                        fontSize: 32,
+                        color: Colors.white,
+                        fontFamily: "Satisfy")),
                 SizedBox(
                   height: 20,
                 ),
@@ -362,7 +392,8 @@ class Home extends StatelessWidget {
                 ),
                 Text(
                   "Created by Ayush",
-                  style: TextStyle(fontSize: 18, color: Colors.white),
+                  style: TextStyle(
+                      fontSize: 38, color: Colors.white, fontFamily: "Bangers"),
                 ),
               ],
             ),
