@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:my_portfolio/resource/colors.dart';
+import 'package:my_portfolio/resource/constants.dart';
+import 'package:my_portfolio/resource/images.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -16,13 +19,14 @@ class Home extends StatelessWidget {
         MediaQuery.of(context).padding.top -
         kToolbarHeight;
     final width = MediaQuery.of(context).size.width;
+    final data = MediaQuery.of(context).copyWith(textScaleFactor: 1.0);
     return Scaffold(
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Container(
           decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage("image/backgroud.jpeg"),
+                  image: AssetImage(kapptest),
                   fit: BoxFit.cover)),
           child: Padding(
             padding: const EdgeInsets.only(left: 10.0, top: 40),
@@ -33,7 +37,7 @@ class Home extends StatelessWidget {
                     //Flexible(fit: FlexFit.loose),
                     CircleAvatar(
                       radius: 70,
-                      backgroundImage: AssetImage("image/ayush.jpg"),
+                      backgroundImage: AssetImage(kpersonal),
                     ),
                     SizedBox(
                       width: 30,
@@ -42,18 +46,17 @@ class Home extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         //Flexible(fit: FlexFit.tight),
-                        Text(
-                          "Ayush Gaur",
+                        Text(kname,
                           style: TextStyle(
                               fontSize: 42,
-                              color: Colors.white,
+                              color: kprimary,
                               fontFamily: "Bangers"),
                         ),
                         Text(
-                          "App Developer",
+                          kdev,
                           style: TextStyle(
                               fontSize: 22,
-                              color: Colors.white,
+                              color: kprimary,
                               fontFamily: "Bangers"),
                         )
                       ],
@@ -73,17 +76,17 @@ class Home extends StatelessWidget {
                           Icon(
                             Icons.school,
                             size: 65,
-                            color: Colors.white,
+                            color: kprimary,
                           ),
                           SizedBox(
                             width: 20,
                           ),
                           //Flexible(fit: FlexFit.loose),
                           Text(
-                            "City Montessori School, Lucknow",
+                            kschool,
                             style: TextStyle(
                                 fontSize: 33,
-                                color: Colors.white,
+                                color: kprimary,
                                 fontFamily: "Caveat"),
                           )
                         ],
@@ -96,16 +99,16 @@ class Home extends StatelessWidget {
                           Icon(
                             Icons.school,
                             size: 65,
-                            color: Colors.white,
+                            color: kprimary,
                           ),
                           SizedBox(
                             width: 20,
                           ),
                           Text(
-                            "Pranveer Singh Institute of Technology, Kanpur",
+                            kcllg,
                             style: TextStyle(
                                 fontSize: 33,
-                                color: Colors.white,
+                                color: kprimary,
                                 fontFamily: "Caveat"),
                           ),
                         ],
@@ -118,16 +121,16 @@ class Home extends StatelessWidget {
                           Icon(
                             Icons.mail,
                             size: 65,
-                            color: Colors.white,
+                            color: kprimary,
                           ),
                           SizedBox(
                             width: 20,
                           ),
                           Text(
-                            "ayushgaur0423@gmail.com",
+                            kmailid,
                             style: TextStyle(
                                 fontSize: 33,
-                                color: Colors.white,
+                                color: kprimary,
                                 fontFamily: "Caveat"),
                           )
                         ],
@@ -140,16 +143,16 @@ class Home extends StatelessWidget {
                           Icon(
                             Icons.phone,
                             size: 65,
-                            color: Colors.white,
+                            color: kprimary,
                           ),
                           SizedBox(
                             width: 20,
                           ),
                           Text(
-                            "+91-8887418075",
+                            kcontact,
                             style: TextStyle(
                                 fontSize: 33,
-                                color: Colors.white,
+                                color: kprimary,
                                 fontFamily: "Caveat"),
                           ),
                         ],
@@ -162,16 +165,16 @@ class Home extends StatelessWidget {
                           Icon(
                             Icons.location_on,
                             size: 65,
-                            color: Colors.white,
+                            color: kprimary,
                           ),
                           SizedBox(
                             width: 20,
                           ),
                           Text(
-                            "Lucknow, Uttar-Pradesh, India",
+                            kloc,
                             style: TextStyle(
                                 fontSize: 33,
-                                color: Colors.white,
+                                color: kprimary,
                                 fontFamily: "Caveat"),
                           )
                         ],
@@ -182,155 +185,19 @@ class Home extends StatelessWidget {
                 SizedBox(
                   height: 100,
                 ),
-                Text(
-                  "Hello, I am an iOS developer in unthinkable solutions. I have completed my schooling from CMS, Lucknow and currently I am pursuing B Tech from Psit, Kanpur. I love to play games which helps in increasing my IQ. I also love to listen soft music.",
+                Text(kdescription,
                   style: TextStyle(
-                      fontSize: 30, color: Colors.white, fontFamily: "Satisfy"),
+                      fontSize: 30, color: kprimary, fontFamily: "Satisfy"),
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(
                   height: 100,
                 ),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Column(
-                    children: <Widget>[
-                      Row(
-                        children: <Widget>[
-                          CircleAvatar(
-                            radius: 95,
-                            backgroundImage: AssetImage("image/project1.jpeg"),
-                          )
-                        ],
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 30,
-                ),
-                //Flexible(fit: FlexFit.loose),
-                Text(
-                  "PAS Project:- Worked on different pages to make them updated with javascript, HTML, CSS with proper working UI with the help of zeplin software and team guidance.",
-                  style: TextStyle(
-                      fontSize: 27, color: Colors.white, fontFamily: "ZenDots"),
-                  textAlign: TextAlign.center,
-                ),
-                SizedBox(
-                  height: 100,
-                ),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Column(
-                    children: <Widget>[
-                      Row(
-                        children: <Widget>[
-                          CircleAvatar(
-                            radius: 95,
-                            backgroundImage: AssetImage("image/project2.jpeg"),
-                          ),
-                        ],
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 30,
-                ),
-                Text(
-                  "Ringley Project:- Worked in UI updation of Webpages in HTML, CSS and Javascript with the proper page decoration and alignment with the help of client and team guidance.",
-                  style: TextStyle(
-                      fontSize: 26, color: Colors.white, fontFamily: "ZenDots"),
-                  textAlign: TextAlign.center,
-                ),
-                SizedBox(
-                  height: 100,
-                ),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Column(
-                    children: <Widget>[
-                      Row(
-                        children: <Widget>[
-                          CircleAvatar(
-                            radius: 95,
-                            backgroundImage: AssetImage("image/project3.jpeg"),
-                          ),
-                        ],
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 30,
-                ),
-                Text(
-                  "Blood Bank Management System:- It is Database management system which helps in blood bank to keep update the software of the latest blood bags available in the blood bank.",
-                  style: TextStyle(
-                      fontSize: 26, color: Colors.white, fontFamily: "ZenDots"),
-                  textAlign: TextAlign.center,
-                ),
-                SizedBox(
-                  height: 100,
-                ),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Column(
-                    children: <Widget>[
-                      Row(
-                        children: <Widget>[
-                          CircleAvatar(
-                            radius: 95,
-                            backgroundImage: AssetImage("image/project4.jpeg"),
-                          ),
-                        ],
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 30,
-                ),
-                Text(
-                  "Active Route Tracer:- It is a cross platform application which uses both software side as well as hardware side. It helps to locate the live location of our model which easily retrives in our software aplication.",
-                  style: TextStyle(
-                      fontSize: 27, color: Colors.white, fontFamily: "ZenDots"),
-                  textAlign: TextAlign.center,
-                ),
-                SizedBox(
-                  height: 100,
-                ),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Column(
-                    children: <Widget>[
-                      Row(
-                        children: <Widget>[
-                          CircleAvatar(
-                            radius: 95,
-                            backgroundImage: AssetImage("image/project5.jpeg"),
-                          ),
-                        ],
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 30,
-                ),
-                Text(
-                  "Food Management Application:- It is an appliaction that searches for the left over food provider and helps to forward that food to the nearest slums so that food can be utilsed by the needy persons instead of storing and wasting that food.",
-                  style: TextStyle(
-                      fontSize: 26, color: Colors.white, fontFamily: "ZenDots"),
-                  textAlign: TextAlign.center,
-                ),
-                SizedBox(
-                  height: 100,
-                ),
+
                 Text("Follow me to know more - ",
                     style: TextStyle(
                         fontSize: 32,
-                        color: Colors.white,
+                        color: kprimary,
                         fontFamily: "Satisfy")),
                 SizedBox(
                   height: 20,
@@ -345,7 +212,7 @@ class Home extends StatelessWidget {
                             onPressed: () {},
                             icon: Icon(
                               Icons.link_outlined,
-                              color: Colors.white,
+                              color: kprimary,
                               size: 26,
                             ),
                             label: Text("Github"),
@@ -361,7 +228,7 @@ class Home extends StatelessWidget {
                             onPressed: () {},
                             icon: Icon(
                               Icons.link_outlined,
-                              color: Colors.white,
+                              color: kprimary,
                               size: 26,
                             ),
                             label: Text("LinkedIn"),
@@ -377,7 +244,7 @@ class Home extends StatelessWidget {
                             onPressed: () {},
                             icon: Icon(
                               Icons.link_outlined,
-                              color: Colors.white,
+                              color: kprimary,
                               size: 26,
                             ),
                             label: Text("Instagram"),
@@ -393,7 +260,7 @@ class Home extends StatelessWidget {
                 Text(
                   "Created by Ayush",
                   style: TextStyle(
-                      fontSize: 38, color: Colors.white, fontFamily: "Bangers"),
+                      fontSize: 38, color: kprimary, fontFamily: "Bangers"),
                 ),
               ],
             ),
