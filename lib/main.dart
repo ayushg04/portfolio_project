@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:my_portfolio/components/about_me.dart';
+import 'package:my_portfolio/components/social_handle.dart';
 import 'package:my_portfolio/resource/colors.dart';
 import 'package:my_portfolio/resource/constants.dart';
 import 'package:my_portfolio/resource/images.dart';
@@ -21,13 +23,10 @@ class Home extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     final data = MediaQuery.of(context).copyWith(textScaleFactor: 1.0);
     return Scaffold(
+      backgroundColor: Colors.cyan,
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Container(
-          decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage(kapptest),
-                  fit: BoxFit.cover)),
           child: Padding(
             padding: const EdgeInsets.only(left: 10.0, top: 40),
             child: Column(
@@ -37,7 +36,7 @@ class Home extends StatelessWidget {
                     //Flexible(fit: FlexFit.loose),
                     CircleAvatar(
                       radius: 70,
-                      backgroundImage: AssetImage(kpersonal),
+                      backgroundImage: AssetImage(me2),
                     ),
                     SizedBox(
                       width: 30,
@@ -182,85 +181,11 @@ class Home extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
-                  height: 100,
-                ),
-                Text(kdescription,
-                  style: TextStyle(
-                      fontSize: 30, color: kprimary, fontFamily: "Satisfy"),
-                  textAlign: TextAlign.center,
-                ),
-                SizedBox(
-                  height: 100,
-                ),
-
-                Text("Follow me to know more - ",
-                    style: TextStyle(
-                        fontSize: 32,
-                        color: kprimary,
-                        fontFamily: "Satisfy")),
-                SizedBox(
-                  height: 20,
-                ),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Column(
-                    children: <Widget>[
-                      Row(
-                        children: <Widget>[
-                          ElevatedButton.icon(
-                            onPressed: () {},
-                            icon: Icon(
-                              Icons.link_outlined,
-                              color: kprimary,
-                              size: 26,
-                            ),
-                            label: Text("Github"),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Row(
-                        children: <Widget>[
-                          ElevatedButton.icon(
-                            onPressed: () {},
-                            icon: Icon(
-                              Icons.link_outlined,
-                              color: kprimary,
-                              size: 26,
-                            ),
-                            label: Text("LinkedIn"),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Row(
-                        children: <Widget>[
-                          ElevatedButton.icon(
-                            onPressed: () {},
-                            icon: Icon(
-                              Icons.link_outlined,
-                              color: kprimary,
-                              size: 26,
-                            ),
-                            label: Text("Instagram"),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 100,
-                ),
+                SocialHandle(),
                 Text(
                   "Created by Ayush",
                   style: TextStyle(
-                      fontSize: 38, color: kprimary, fontFamily: "Bangers"),
+                      fontSize: 38, color: kbgcolor, fontFamily: "Bangers"),
                 ),
               ],
             ),

@@ -6,3 +6,4 @@ const String kcllg = "Pranveer Singh Institute of Technology, Kanpur";
 const String kmailid = "ayushgaur0423@gmail.com";
 const String kcontact = "+91-8887418075";
 const String kloc = "Lucknow, Uttar-Pradesh, India";
+const String follow = "Follow Me-";
