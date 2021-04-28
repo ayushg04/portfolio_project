@@ -9,3 +9,4 @@ const String loc = "Lucknow, Uttar-Pradesh, India";
 const String follow = "Follow Me-";
 const String about = "About Me-";
 const String foot = "Created By AYUSH";
+const String infome = "Personal Information";

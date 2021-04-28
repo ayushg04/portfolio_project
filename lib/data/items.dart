@@ -25,6 +25,6 @@ List<InfoModel> kitems = [
   ),
   InfoModel(
     item: InfoItems.skills,
-    name: "Name",
+    name: "Skills",
   ),
 ];
