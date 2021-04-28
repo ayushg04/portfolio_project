@@ -1,5 +1,8 @@
 enum InfoItems{
-  projects
+  personal,
+  projects,
+  languages,
+  skills,
 }
 class InfoModel{
   InfoItems item;
@@ -11,5 +14,17 @@ List<InfoModel> kitems = [
   InfoModel(
     item: InfoItems.projects,
     name: "Projects"
+  ),
+  InfoModel(
+    item: InfoItems.personal,
+    name: "Personal Info",
+  ),
+  InfoModel(
+    item: InfoItems.languages,
+    name: "Languages",
+  ),
+  InfoModel(
+    item: InfoItems.skills,
+    name: "Name",
   ),
 ];

@@ -11,7 +11,7 @@ class _ProjectState extends State<Project> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kbgcolor,
+      backgroundColor: Colors.blue,
       body: ProjectList(),
     );
   }

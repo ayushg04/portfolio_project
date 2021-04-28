@@ -3,14 +3,18 @@ import 'package:my_portfolio/data/util.dart';
 import 'package:my_portfolio/resource/colors.dart';
 import 'package:my_portfolio/resource/constants.dart';
 import 'package:my_portfolio/resource/images.dart';
+class SocialHandle extends StatefulWidget {
+  @override
+  _SocialHandleState createState() => _SocialHandleState();
+}
 
-class SocialHandle extends StatelessWidget {
+class _SocialHandleState extends State<SocialHandle> {
   @override
   Widget build(BuildContext context) {
     return Align(
       alignment: Alignment.center,
       child: Container(
-        margin: EdgeInsets.symmetric(vertical: 87.0),
+        margin: EdgeInsets.symmetric(vertical: 17.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -31,7 +35,7 @@ class SocialHandle extends StatelessWidget {
                   },
                   child: Image.asset(
                     insta,
-                    color: kbgcolor,
+                    color: bgcolor,
                     height: 40.0,
                     width: 40.0,
                   ),
@@ -47,7 +51,7 @@ class SocialHandle extends StatelessWidget {
                   },
                   child: Image.asset(
                     linkln,
-                    color: kbgcolor,
+                    color: bgcolor,
                     height: 40.0,
                     width: 40.0,
                   ),
@@ -63,7 +67,7 @@ class SocialHandle extends StatelessWidget {
                   },
                   child: Image.asset(
                     git,
-                    color: kbgcolor,
+                    color: bgcolor,
                     height: 40,
                     width: 40,
                   ),
@@ -76,3 +80,5 @@ class SocialHandle extends StatelessWidget {
     );
   }
 }
+
+

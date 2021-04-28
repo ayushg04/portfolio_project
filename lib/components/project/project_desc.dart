@@ -14,14 +14,15 @@ class ProjectList extends StatelessWidget {
           children: [
             if(kprojectList[index].name!=null && kprojectList[index].name.isNotEmpty)
               Container(
+                alignment: Alignment.center,
                 width: MediaQuery.of(context).size.width,
                 padding: EdgeInsets.symmetric(horizontal: 22, vertical: 6),
                 child: Text(
                   kprojectList[index].name,
                   style: TextStyle(
-                    fontWeight: FontWeight.w700,
-                    fontSize: 40,
-                    color: kprimary,
+                    fontWeight: FontWeight.w900,
+                    fontSize:38,
+                    color: bgcolor,
                     letterSpacing: 0.045,
                   ),
                 ),
@@ -34,8 +35,8 @@ class ProjectList extends StatelessWidget {
                   "Role",
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
-                    fontSize: 40,
-                    color: kprimary,
+                    fontSize: 33,
+                    color: primary,
                     letterSpacing: 0.045,
                   ),
                 ),
@@ -47,9 +48,8 @@ class ProjectList extends StatelessWidget {
                 child: Text(
                   kprojectList[index].role,
                   style: TextStyle(
-                    fontWeight: FontWeight.w700,
-                    fontSize: 40,
-                    color: kprimary,
+                    fontSize: 30,
+                    color: primary,
                     letterSpacing: 0.045,
                   ),
                 ),
@@ -62,8 +62,8 @@ class ProjectList extends StatelessWidget {
                   "Description",
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
-                    fontSize: 40,
-                    color: kprimary,
+                    fontSize: 33,
+                    color: primary,
                     letterSpacing: 0.045,
                   ),
                 ),
@@ -75,9 +75,8 @@ class ProjectList extends StatelessWidget {
                 child: Text(
                   kprojectList[index].description,
                   style: TextStyle(
-                    fontWeight: FontWeight.w700,
-                    fontSize: 40,
-                    color: kprimary,
+                    fontSize: 30,
+                    color: primary,
                     letterSpacing: 0.045,
                     decorationStyle: TextDecorationStyle.wavy
                   ),
